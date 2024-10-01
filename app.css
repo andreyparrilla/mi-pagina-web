@@ -5,3 +5,19 @@ h1{
 body{
     background-color: rgba(194, 134, 74, 0.528);
 }
+
+p{
+    font-size: 18px;
+}
+
+li{
+    font-size: 18px;
+}
+
+button{
+    font-size: small
+}
+
+label {
+    font-size: 18px;
+}
