@@ -3,7 +3,7 @@ h1{
 }
 
 body{
-    background-color: rgba(194, 134, 74, 0.528);
+    background-color: rgba(223, 202, 181, 0.528);
 }
 
 p{
@@ -20,4 +20,28 @@ button{
 
 label {
     font-size: 18px;
+}
+
+a{
+    font-size: 19px;
+    text-decoration: none;
+    color: rgb(49, 28, 6);
+}
+
+.container1{
+    border: 2px solid rgb(101, 63, 19);
+    padding: 5px;
+    background-color: #D2B48C;
+}
+
+.container2{
+    border: 2px solid rgb(19, 101, 44);
+    padding: 5px;
+    background-color: #8cd28c;
+}
+
+.container3{
+    border: 2px solid rgb(19, 63, 101);
+    padding: 5px;
+    background-color: #8cbcd2;
 }
