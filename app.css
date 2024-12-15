@@ -1,10 +1,42 @@
 h1{
     color: rgb(120, 53, 20);
+    font-size: 30px;
 }
 
 body{
     background-color: rgba(223, 202, 181, 0.528);
+    line-height: 1.5;
 }
+
+/* Fondo verde claro apagado */
+.bodytext{
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(223, 202, 181, 0.528);; /* Verde claro apagado */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    width: 100%; /* Ocupa todo el ancho del viewport */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el contenido */
+    padding: 0 16px; /* Espacio en los lados */
+  }
+  
+  .content {
+    width: 100%; /* Por defecto ocupa todo el ancho disponible */
+    max-width: 500px; /* Máximo de 500px para pantallas grandes */
+    background-color: white; /* Fondo blanco */
+    padding: 16px;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+  }
+  
 
 p{
     font-size: 18px;
@@ -45,3 +77,13 @@ a{
     padding: 5px;
     background-color: #8cbcd2;
 }
+
+:root {
+    font-family: Inter, sans-serif;
+    font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+  }
+  @supports (font-variation-settings: normal) {
+    :root { font-family: InterVariable, sans-serif; }
+  }
+  
+  
