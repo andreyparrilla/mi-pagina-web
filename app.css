@@ -1,41 +1,58 @@
 h1{
     color: rgb(120, 53, 20);
     font-size: 30px;
+    line-height: 1.3;
 }
 
 body{
     background-color: rgba(223, 202, 181, 0.528);
     line-height: 1.5;
+    display: flex;
 }
 
-/* Fondo verde claro apagado */
-.bodytext{
-    line-height: 1.5;
-    margin: 0;
-    padding: 0;
-    background-color: rgba(223, 202, 181, 0.528);; /* Verde claro apagado */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    font-family: Arial, sans-serif;
-  }
+input[type="text"] {
+
+    padding: 10px 10px;
+    border: 1px solid #949494;
+    border-radius: 4px;
+    font-size: 17px;
+}
+
+button{
+    padding: 10px 15px;
+    border: none;
+    background-color: rgba(126, 77, 28, 0.683);;
+    color: white;
+    font-size: 17px;
+    border-radius: 4px;
+    cursor: pointer;
+    
+}
+button:hover {
+    background-color: rgba(126, 77, 28, 0.935);
+}
+
   
-  .container {
+.container {
     width: 100%; /* Ocupa todo el ancho del viewport */
     display: flex;
     justify-content: center; /* Centra horizontalmente el contenido */
-    padding: 0 16px; /* Espacio en los lados */
-  }
-  
-  .content {
-    width: 100%; /* Por defecto ocupa todo el ancho disponible */
+    padding: 0px 10px; /* Espacio en los lados */
+}
+
+.content {
     max-width: 500px; /* Máximo de 500px para pantallas grandes */
+    width: 100%;
+    @media (min-width: 500px) {
+        width: 500px;
+    }
     background-color: white; /* Fondo blanco */
     padding: 16px;
     border-radius: 8px; /* Bordes redondeados */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
-  }
+
+    flex-direction: column;
+}
   
 
 p{
@@ -46,9 +63,6 @@ li{
     font-size: 18px;
 }
 
-button{
-    font-size: small
-}
 
 label {
     font-size: 18px;
@@ -64,18 +78,27 @@ a{
     border: 2px solid rgb(101, 63, 19);
     padding: 5px;
     background-color: #D2B48C;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra */
+
 }
 
 .container2{
     border: 2px solid rgb(19, 101, 44);
     padding: 5px;
     background-color: #8cd28c;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra */
+
 }
 
 .container3{
     border: 2px solid rgb(19, 63, 101);
     padding: 5px;
     background-color: #8cbcd2;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra */
+
 }
 
 :root {
@@ -85,5 +108,4 @@ a{
   @supports (font-variation-settings: normal) {
     :root { font-family: InterVariable, sans-serif; }
   }
-  
-  
+

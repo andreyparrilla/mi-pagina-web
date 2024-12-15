@@ -12,56 +12,99 @@
     <link rel="stylesheet" href="app.css">
 </head>
 
-<body>
-    <h1>Andrey Parrilla</h1>
-    <h2>Entradas del blog</h2>
+<body >
 
-    <div>
-        <a href="molinos.html" class="container1">
-            Entrada 1
-        </a>
+    <div class="container">
+        <div class="content">
+
+            <h1>Andrey Parrilla</h1>
+            <h2>Entradas del blog</h2>
+        
+            <a href="molinos.html">
+                <div class="container1">
+                    Entrada 1
+                </div>
+            </a>
+        
+            <div style="margin-bottom: 20px;"></div>
+
+            <a href="">
+                <div class="container1">
+                    Entrada 2
+                </div>
+            </a>
+        
+            <div style="margin-bottom: 20px;"></div>
+
+            <a href="">
+                <div class="container3">
+                    Entrada 3
+                </div>
+            </a>
+        
+            <div style="margin-bottom: 20px;"></div>
+
+            <a href="">
+                <div class="container2">
+                    Entrada 4
+                </div>
+            </a>
+        
+            <div style="margin-bottom: 20px;"></div>
+
+            <a href="">
+                <div class="container2">
+                    Entrada 5
+                </div>
+            </a>
+        
+            <div style="margin-bottom: 20px;"></div>
+
+            <a href="">
+                <div class="container2">
+                    Entrada 6
+                </div>
+            </a>
+
+            <h2>Otros</h2>
+
+            <div style="width: 100%; display: flex;">
+                <input type="text" id="searchInput" placeholder="Buscar..." style="flex-grow: 1; margin-right: 10px;">
+            </div>
+
+            <div style="margin-bottom: 15px;"></div>
+
+            <button onclick="search()">Confirmar</button>
+
+
+            <div style="margin-bottom: 20px;"></div>
+
+            <script>
+                function search() {
+                    // Obtén el valor del input
+                    const input = document.getElementById("searchInput").value.toLowerCase();
+
+                    // Define las palabras clave y las páginas asociadas
+                    const redirections = {
+                        "julio": "molinos.html",
+                        "b": "pagina_b.html",
+                        "c": "pagina_c.html"
+                    };
+
+                    // Comprueba si el input coincide con alguna palabra clave
+                    if (redirections[input]) {
+                        // Redirige a la página correspondiente
+                        window.location.href = redirections[input];
+                    } 
+                }
+
+            </script>
+
+        
+
+        </div>
+        
     </div>
-
-    <div style="margin-bottom: 25px;"></div>
-
-    <div>
-        <a href="" class="container1">
-            Entrada 2
-        </a>
-    </div>
-
-    <div style="margin-bottom: 25px;"></div>
-
-    <div>
-        <a href="" class="container3">
-            Entrada 3
-        </a>
-    </div>
-
-    <div style="margin-bottom: 25px;"></div>
-
-    <div>
-        <a href="" class="container2">
-            Entrada 4
-        </a>
-    </div>
-
-    <div style="margin-bottom: 25px;"></div>
-
-    <div>
-        <a href="" class="container2">
-            Entrada 5
-        </a>
-    </div>
-
-    <div style="margin-bottom: 25px;"></div>
-
-    <div>
-        <a href="" class="container2">
-            Entrada 6
-        </a>
-    </div>
-
 
 </body>
 
